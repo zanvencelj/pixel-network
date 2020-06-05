@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Network &bull; Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> <!--Bree Serif-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet"> <!--Alegreya-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="icon" href="slike/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+    	::-webkit-scrollbar {
+    		width: 0.8rem;
+		}
+
+		::-webkit-scrollbar-track {
+    		background: #141414;
+		}
+
+		::-webkit-scrollbar-thumb {
+    		background: rgba(255, 255, 255, 0.2);
+    		border: solid 3px #141414;
+    		border-radius: 5px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+    		background: rgba(255, 255, 255, 0.5);
+		}
+    </style>
+</head>
+
+<body>
+   <header>
+       <div class="meni">
+           <ul>
+              <li><a href="index.html">Hub</a></li>
+               <li><a href="pages/store.html">Store</a></li>
+               <li><a href="pages/map.html">Map</a></li>
+           </ul>
+       </div>
+	   <div class="discord"><iframe src="https://discordapp.com/widget?id=640195234453520414&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" id="discord"></iframe></div>
+   </header>
+   <main>
+       <div class="header-img"></div>
+   </main>
+   <div class="clearboth"></div>
+    <div>
+        <h1>Official PixelNetwork website!</h1>
+        <h2 class="hh2">Server address: play.mypixelnetwork.com</h2>
+        <!--img src="https://topg.org/image/230620/399129.gif" alt="Best Minecraft servers list - Topg.org"-->
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Welcome</h2>
+            <p>Welcome to our website. We will try to explain you some of our unique features of our server and hopefully halp you to make your gaming experiance even more fun.</p>
+            <p>Here is the list of our unique features on this server:</p>
+            <ul>
+            	<li>Grappling Hooks</li>
+            	<li>Backpacks</li>
+            	<li><a href="pages/map.html">Live Map</a></li>
+            	<li>Custom Enchants</li>
+            	<li>Some Cool Orbs</li>
+            	<li>Land Claiming</li>
+            	<li>Auction House</li>
+            	<li>A lot more to explore...</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="slike/spawn01.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="slike/spawn02.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="slike/spawn03.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="slike/spawn04.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="slike/spawn05.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="slike/spawn06.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <br><br>
+    <footer>
+        <div class="copy">
+        <b>PixelNetwork &copy; 2020</b>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex=slides.length} 
+        for (i=0; i < slides.length; i++) { slides[i].style.display="none" ; }
+        for (i=0; i < dots.length; i++) { dots[i].className=dots[i].className.replace("active","" ); } slides[slideIndex-1].style.display="block" ; dots[slideIndex-1].className +=" active" ; }
+    </script>
+</body>
+</html>
